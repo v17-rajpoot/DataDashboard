@@ -1,29 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vaibh\\source\\repos\\DataDashboard\\DataDashboard.csproj": {}
+    "C:\\Users\\vaibhav.Rajpoot\\Downloads\\DataDashboard\\DataDashboard\\DataDashboard.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vaibh\\source\\repos\\DataDashboard\\DataDashboard.csproj": {
+    "C:\\Users\\vaibhav.Rajpoot\\Downloads\\DataDashboard\\DataDashboard\\DataDashboard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vaibh\\source\\repos\\DataDashboard\\DataDashboard.csproj",
+        "projectUniqueName": "C:\\Users\\vaibhav.Rajpoot\\Downloads\\DataDashboard\\DataDashboard\\DataDashboard.csproj",
         "projectName": "DataDashboard",
-        "projectPath": "C:\\Users\\vaibh\\source\\repos\\DataDashboard\\DataDashboard.csproj",
-        "packagesPath": "C:\\Users\\vaibh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vaibh\\source\\repos\\DataDashboard\\obj\\",
+        "projectPath": "C:\\Users\\vaibhav.Rajpoot\\Downloads\\DataDashboard\\DataDashboard\\DataDashboard.csproj",
+        "packagesPath": "C:\\Users\\vaibhav.Rajpoot\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vaibhav.Rajpoot\\Downloads\\DataDashboard\\DataDashboard\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vaibh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\vaibhav.Rajpoot\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
@@ -60,24 +55,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[7.0.15, 7.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -86,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.407\\RuntimeIdentifierGraph.json"
         }
       }
     }
