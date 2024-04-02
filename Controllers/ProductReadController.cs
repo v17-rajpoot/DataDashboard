@@ -31,7 +31,7 @@ namespace DataDashboard.Controllers
             return BadRequest("Product name is not found");       
          }
          else{
-            string SQLquery = "Select {name} from Products";
+            string SQLquery = $"Select {name} from Products";
             //return await _context.Products.where(p=>p.name.contains(name)).ToListAsync();
             return await _context.Products.FromSqlRaw(SQLquery).ToListAsync;
          }
