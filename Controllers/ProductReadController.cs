@@ -2,7 +2,9 @@ using Microsoft.AspNetCore.Mvc;
 using DataDashboard.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
- namespace DataDashboard.Controllers
+using System.ComponentModel.Design;
+using System.Data.SqlTypes;
+namespace DataDashboard.Controllers
  {
     [ApiController]
     [Route("api/[controller]")]
@@ -18,23 +20,22 @@ using System.Threading.Tasks;
        [HttpGet("{id}")]
        public async Task<ActionResult<Product>> GetProduct(int id)
        {
-         var Product = await _context.Products.FindAsync(id);   
-         if(Product == null)
-         {
-            return NotFound();
-         }      
-         else{
-#pragma warning disable CS8619 // Nullability of reference types in value doesn't match target type.
-                return Product ;
-#pragma warning restore CS8619 // Nullability of reference types in value doesn't match target type.
-
-            }            
+         var product = await _context.Products.FindAsync(id);   
+         return product?.Name != null ? product  : NotFound();           
        }
-
-
-       
-
-
+       [HttpGet("Search")]
+       public async Task<ActionResult<Product>> SearchProducts(string name)
+       {
+         if(string.IsNullOrEmpty(name))
+         {
+            return BadRequest("Product name is not found");       
+         }
+         else{
+            string SQLquery = "Select {name} from Products";
+            //return await _context.Products.where(p=>p.name.contains(name)).ToListAsync();
+            return await _context.Products.FromSqlRaw(SQLquery).ToListAsync;
+         }
+       }
     }
 
  }
