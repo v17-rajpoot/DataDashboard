@@ -9,5 +9,10 @@ namespace DataDashboard.Models
             
         }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Category> ProductCategory {get ;set;} 
+        public DbSet<Customer> CustomerDetails {get ;set;} 
+        public DbSet<Order> Orders {get ;set;} 
+        public DbSet<OrderDetails> OrderDetail {get ;set;} 
+
     }
 }

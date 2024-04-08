@@ -24,7 +24,7 @@ namespace DataDashboard.Controllers
          var product = await _context.Products.FindAsync(id);   
          return product?.Name != null ? product  : NotFound();           
        }
-       [HttpGet("Search")]
+       [HttpGet("{Search}")]
        public async Task<ActionResult<Product>> SearchProducts(string name)
        {
          if(string.IsNullOrEmpty(name))
