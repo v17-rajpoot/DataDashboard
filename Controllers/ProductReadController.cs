@@ -9,6 +9,7 @@ namespace DataDashboard.Controllers
     [ApiController]
     [Route("api/[controller]")]
     public class ProductReadController : ControllerBase
+    
     {
       private readonly AppDbContext _context;
        public ProductReadController(AppDbContext context)
