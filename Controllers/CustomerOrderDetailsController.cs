@@ -15,8 +15,6 @@ namespace DataDashboard.Controllers
         {
             _context = context;
         }
-
-       
         }
 
 }

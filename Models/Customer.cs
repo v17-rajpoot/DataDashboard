@@ -1,6 +1,6 @@
 namespace DataDashboard.Models
 {
-    public class Cusotmer 
+    public class Customer 
     {
         public int? CusotmerId { get; set; }
         public String? CusttomerName { get; set; }
